@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="con">
+      <div class="card">
+        <div class="search">
+          <p class="txt1">HOW IS THE WEATHER!</p>
+          <p class="txt2">--LET'S FIND OUT--</p>
+          <div class="box">
+            <input type="text" required placeholder=" search" class="city" />
+            <button class="find" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+        </div>
+        </div>
+        <div class="result">
+          <div class="lay1">
+            <i class="back fa fa-backward"></i>
+            <div class="temp">
+              <p class="tmp"></p>
+              <p>
+                <sup><small>o</small></sup>
+              </p>
+            </div>
+          </div>
+
+          <div class="lay2">
+            <p class="des"></p>
+          </div>
+          <div class="lay3">
+            <div class="bottombox one">
+              <p class="anim hu">Humidity</p>
+              <p class="anim hum"></p>
+            </div>
+            <div class="bottombox two">
+              <p class="anim">Pressure</p>
+              <p class="anim pre"></p>
+            </div>
+            <div class="bottombox three">
+              <p class="anim vis">Visibility</p>
+              <p class="anim visi"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- tilting card -->
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+
+    <!-- tilted -->
+
+  </body>
+</html>
